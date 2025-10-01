@@ -1,28 +1,32 @@
-header{
-     font-size: 20px;
+/* ===== BODY Y FONDO ===== */
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
 }
+
+/* ===== HEADER ===== */
+header {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+/* ===== ANIMACIONES ===== */
 @keyframes moveUpDown {
-  0% {
-    transform: translateY(0);   /* posición inicial */
-  }
-  50% {
-    transform: translateY(50px); /* baja 50px */
-  }
-  100% {
-    transform: translateY(0);   /* vuelve arriba */
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
 }
+
 @keyframes derechaIzquierda {
-  0% {
-    transform: translateX(0);   /* posición inicial */
-  }
-  50% {
-    transform: translateX(50px); /* mueve 50px a la derecha */
-  }
-  100% {
-    transform: translateX(0);   /* vuelve a la posición inicial */
-  }
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
 }
+
 @keyframes circulos {
   0% { transform: translate(0,0); }
   25% { transform: translate(50px, 0); }
@@ -30,50 +34,94 @@ header{
   75% { transform: translate(0, 50px); }
   100% { transform: translate(0,0); }
 }
-body{
-    background-color: beige;
-}
+
+/* ===== EMOJI ===== */
 .anim-emoji {
     display: inline-block;
-  font-size: 50px;
-  animation: derechaIzquierda 2s ease-in-out infinite;
+    font-size: 50px;
+    animation: derechaIzquierda 2s ease-in-out infinite;
+    margin-left: 10px; /* separa un poco del texto */
+    vertical-align: middle;
 }
-@media (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  h1 {
-    font-size: 20px;
-  }
-}
-.parrafo{
-    margin-top: 50px;
-    font-size: 40px;
-}
-.foto1{
-    height: 150px;
-    width: auto;
-}
-.foto2{
-    height: 150px;
-    width: auto;
-    animation: circulos 2s linear infinite;
-    margin-left: 700px;
-}
-.ig{
-    color: saddlebrown;
+
+/* ===== PÁRRAFO ===== */
+.parrafo {
+    margin-top: 30px;
     font-size: 30px;
+    text-align: center;
 }
-footer {
-  text-align: center;  /* centra horizontalmente */
-  padding: 50px;       /* espacio interno */
-  color: black;
-  font-size: 14px;
+
+/* ===== IMÁGENES ===== */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* espacio entre imágenes */
+    margin: 20px 0;
 }
-ol a{
-    color:blueviolet;
+
+.foto1, .foto2 {
+    height: 150px;
+    width: auto;
+}
+
+.foto2 {
+    animation: circulos 4s linear infinite;
+}
+
+/* ===== LISTA DE INSTAGRAM ===== */
+.ig {
+    color: saddlebrown;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ig ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.ig li {
+    margin-bottom: 10px;
+}
+
+.ig a {
+    color: blueviolet;
     text-decoration: none;
 }
-ol li {
-  margin-bottom: 10px; /* espacio debajo de cada ítem */
+
+.ig a:hover {
+    color: darkviolet;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    header {
+        font-size: 18px;
+    }
+    .parrafo {
+        font-size: 20px;
+    }
+    .anim-emoji {
+        font-size: 30px;
+    }
+    .foto1, .foto2 {
+        height: 100px;
+    }
+    .ig {
+        font-size: 18px;
+    }
 }
