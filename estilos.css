@@ -35,15 +35,6 @@ header {
   100% { transform: translate(0,0); }
 }
 
-/* ===== EMOJI ===== */
-.anim-emoji {
-    display: inline-block;
-    font-size: 50px;
-    animation: derechaIzquierda 2s ease-in-out infinite;
-    margin-left: 10px; /* separa un poco del texto */
-    vertical-align: middle;
-}
-
 /* ===== PÁRRAFO ===== */
 .parrafo {
     margin-top: 30px;
@@ -58,40 +49,6 @@ header {
     align-items: center;
     gap: 50px; /* espacio entre imágenes */
     margin: 20px 0;
-}
-
-.foto1, .foto2 {
-    height: 150px;
-    width: auto;
-}
-
-.foto2 {
-    animation: circulos 4s linear infinite;
-}
-
-/* ===== LISTA DE INSTAGRAM ===== */
-.ig {
-    color: saddlebrown;
-    font-size: 25px;
-    text-align: center;
-}
-
-.ig ol {
-    padding-left: 0;
-    list-style-position: inside;
-}
-
-.ig li {
-    margin-bottom: 10px;
-}
-
-.ig a {
-    color: blueviolet;
-    text-decoration: none;
-}
-
-.ig a:hover {
-    color: darkviolet;
 }
 
 /* ===== FOOTER ===== */
