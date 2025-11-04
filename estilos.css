@@ -6,6 +6,10 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
+.ul { 
+    front-size: 20px;
+    }
+  
 /* ===== HEADER ===== */
 header {
     font-size: 20px;
@@ -50,7 +54,6 @@ footer {
     font-size: 14px;
     background-color: #f0f0f0;
     margin-top: 50px;
-}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
