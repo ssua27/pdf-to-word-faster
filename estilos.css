@@ -42,15 +42,6 @@ header {
     text-align: center;
 }
 
-/* ===== IMÁGENES ===== */
-.imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px; /* espacio entre imágenes */
-    margin: 20px 0;
-}
-
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
